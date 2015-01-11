@@ -7,7 +7,7 @@ browser.fill('password','awesome')
 button=browser.find_by_value('Log In')
 button.click()
 if browser.is_text_present('Dashboard'):
-	print "Yalla"
+	print "Wow"
 else:
 	print "Oh no"
 
