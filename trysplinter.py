@@ -1,12 +1,14 @@
 from splinter import Browser
+import time
 
 browser=Browser()
-browser.visit('https://mitcoe.herokuapp.com')
-browser.fill('username','me@melvinphilips.com')
-browser.fill('password','awesome')
-button=browser.find_by_value('Log In')
+browser.visit('https://www.juliabox.org/hostlaunchipnb/')
+browser.fill('Email','testjuliamechanize')
+browser.fill('Passwd','testjulia')
+button=browser.find_by_value('Sign in')
 button.click()
-if browser.is_text_present('Dashboard'):
+time.sleep(30)
+if browser.is_text_present('IJulia'):
 	print "Wow"
 else:
 	print "Oh no"
