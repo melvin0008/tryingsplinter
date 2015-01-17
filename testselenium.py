@@ -13,11 +13,11 @@ def testjulia():
     driver.get("https://www.juliabox.org/hostlaunchipnb/")
 
     emailid = driver.find_element_by_id("Email")
-    emailid.send_keys("testjuliamechanize")
+    emailid.send_keys("youremailID")
 
 
     passw = driver.find_element_by_id("Passwd")
-    passw.send_keys("testjulia")
+    passw.send_keys("yourpassword")
 
 
     signin = driver.find_element_by_id("signIn")
